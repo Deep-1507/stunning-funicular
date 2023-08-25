@@ -332,8 +332,9 @@
   font-family: "Poppins", sans-serif;
 }
 .contact {
-  margin-left: 80px;
+  margin-left: 50px;
   font-family: "Poppins", sans-serif;
+  font-size: 35px
 }
 .printer {
   font-size: 30px;
