@@ -326,10 +326,13 @@
 .use2:hover{
     background-color: orangered;
   } */
-.contact,
 .contact1,
 .contact2 {
   margin-left: 50px;
+  font-family: "Poppins", sans-serif;
+}
+.contact {
+  margin-left: 80px;
   font-family: "Poppins", sans-serif;
 }
 .printer {
