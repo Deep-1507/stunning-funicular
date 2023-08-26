@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Preloader -->
+    <div id="preloader"></div>
     <!-- Navigation Bar -->
     <nav class="navbar" id="navbar">
       <ul>
@@ -424,6 +426,12 @@
     <div class="Credit">
       Made with <span class="emoji">&#128170;</span> by Deependra Kumar
     </div>
+     <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load",function(){
+    loader.style.display="none";
+      })
+    </script>
   </body>
   <br />
 </html>
