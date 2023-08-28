@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyWings Airlines | Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader"></div>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="flightschedule.html">Flight Schedules</a></li>
+        <li><a href="offers.html">Ongoing Offers!</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="use.html">How to Use?</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+
+        <div class="search">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Type to search....."
+          />
+          <input type="button" class="btn" value="Go!" />
+        </div>
+      </ul>
+    </nav>
+    
+    <div>
+      <p class="text1">Welcome to <span class="ht">SkyWings</span> Airlines!</p>
+      <div class="newclass">
+        <div class="wrapper">
+          <div class="static-txt">Make your Journey</div>
+          <ul class="dynamic-txts">
+            <li><span>Safe</span></li>
+            <li><span>Reliable</span></li>
+            <li><span></span></li>
+            <li><span>Memorable</span></li>
+          </ul>
+        </div>
+      </div>
+      <img
+        class="image1"
+        src="
+        1.jpg"
+        alt="Error Loading Image"
+      />
+    </div>
+
+    <br />
+    <p class="text2">"SkyWings Airlines : Soaring Above Expectations!"</p>
+    <br />
+    <hr />
+    <br />
+    <br />
+    <span class="text4">Search Flights</span> <br /><br />
+
+    <form action="backend.php" class="form">
+      <span class="date"
+        ><label for="date">Enter Date of Journey:</label
+        ><input type="date" name="date" id="date" class="date1"
+      /></span>
+
+      <span class="src"
+        ><label for="source">Enter the Source Airport:</label>
+        <input type="text" id="source" class="src1"
+      /></span>
+
+      <span class="dst"
+        ><label for="dest">Enter your Destination:</label>
+        <input type="text" id="dest" class="dst1"
+      /></span>
+      <br /><br /><br /><br />
+      <span class="submit"
+        ><input type="submit" value="Submit!" class="submit1"
+      /></span>
+    </form>
+
+    <!-- Footer -->
+    <div class="footer1">
+      <br />
+      <hr />
+      <br />
+
+      Headon to the
+      <a style="text-decoration: none; color: orangered" href="#navbar">
+        Navigation Menu</a
+      >
+      for more!
+    </div>
+    <br />
+    <div class="clk">
+      <a style="text-decoration: none; color: orangered" href="index.html"
+        >Click here</a
+      >
+      to land at Home Page
+    </div>
+    <br />
+    <div class="footer2">&#169; Copyright 2023 SkyWings Airlines. All Rights Reserved.</div>
+    <br />
+    <hr />
+    <div class="Credit">
+      Made with <span class="emoji">&#128170;</span> by Deependra Kumar
+      <br />
+    </div>
+    <br />
+
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
