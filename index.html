@@ -4,13 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SkyWings Airlines | Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Preloader -->
-    <div id="preloader"></div>
+    <!-- <div id="preloader"></div> -->
     <!-- Navigation Bar -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" style="position: relative;">
+<h1 style=" font-family: Poppins, sans-serif; font-size: 40px;"><span style="color:orangered;">SKY</span><span style="color: white;">WINGS</span></h1>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="flightschedule.html">Flight Schedules</a></li>
@@ -19,7 +26,7 @@
         <li><a href="use.html">How to Use?</a></li>
         <li><a href="contact.html">Contact Us</a></li>
 
-        <div class="search">
+        <!-- <div class="search">
           <input
             type="search"
             name="search"
@@ -27,10 +34,10 @@
             placeholder="Type to search....."
           />
           <input type="button" class="btn" value="Go!" />
-        </div>
+        </div> -->
       </ul>
     </nav>
-    
+
     <div>
       <p class="text1">Welcome to <span class="ht">SkyWings</span> Airlines!</p>
       <div class="newclass">
@@ -44,49 +51,175 @@
           </ul>
         </div>
       </div>
-      <img
-        class="image1"
-        src="
-        1.jpg"
-        alt="Error Loading Image"
-      />
+    </div>
+
+     <!-- Form
+     <span class="text4">Search Flights</span> <br /><br />
+
+     <div class="form" style="box-shadow: inset;">
+       <form action="backend.php">
+         <span class="date"
+           ><label for="date">Date:</label
+           ><input type="date" name="date" id="date" class="box"
+         /></span>
+ 
+         <span class="src"
+           ><label for="source">From:</label>
+           <input type="text" id="source" class="box" placeholder="Origin"
+         /></span>
+         
+         <span class="dst"
+           ><label for="dest">To:</label>
+           <input type="text" id="dest" class="box" placeholder="Destination"
+         /></span>
+ <br><br><br>
+         <span class="class"
+           ><label for="class">Class of Travel:</label>
+           <input type="text" id="class" class="box"
+         /></span>
+ 
+         <span class="pss"
+           ><label for="pss">Enter the number of Passengers Travelling:</label>
+           <input type="text" id="pss" class="box"
+         /></span>
+ 
+ 
+ 
+         <br /><br />
+         <span class="submit"
+           ><input type="submit" value="Search Flights!" class="submit1"
+         /></span>
+       </form>
+     </div> -->
+     
+    <!-- Corousel -->
+    <br>
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      style="
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 20px;
+        filter: drop-shadow(10px 10px 20px rgb(235, 81, 10));
+
+      "
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://source.unsplash.com/1600x800/?flight"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://source.unsplash.com/1600x800/?airplane"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://source.unsplash.com/1600x800/?airbus"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://source.unsplash.com/1600x800/?Boeing"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://source.unsplash.com/1600x800/?Airline"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
     <br />
-    <p class="text2">"SkyWings Airlines : Soaring Above Expectations!"</p>
+    <p class="text2">
+      "<span class="text21">SkyWings Airlines </span>: Soaring Above
+      Expectations!"
+    </p>
     <br />
     <hr />
     <br />
     <br />
+
+    <!-- Form -->
     <span class="text4">Search Flights</span> <br /><br />
 
-    <form action="backend.php" class="form">
-      <span class="date"
-        ><label for="date">Enter Date of Journey:</label
-        ><input type="date" name="date" id="date" class="date1"
-      /></span>
+    <div class="form">
+      <form action="backend.php">
+        <span class="date"
+          ><label for="date">Enter Date of Journey:</label
+          ><input type="date" name="date" id="date" class="box"
+        /></span>
 
-      <span class="src"
-        ><label for="source">Enter the Source Airport:</label>
-        <input type="text" id="source" class="src1"
-      /></span>
+        <span class="src"
+          ><label for="source">Enter the Source Airport:</label>
+          <input type="text" id="source" class="box"
+        /></span>
+        
+        <span class="dst"
+          ><label for="dest">Enter your Destination:</label>
+          <input type="text" id="dest" class="box"
+        /></span>
+<br><br><br>
+        <span class="class"
+          ><label for="class">Enter the Class of Travel:</label>
+          <input type="text" id="class" class="box"
+        /></span>
 
-      <span class="dst"
-        ><label for="dest">Enter your Destination:</label>
-        <input type="text" id="dest" class="dst1"
-      /></span>
-      <br /><br /><br /><br />
-      <span class="submit"
-        ><input type="submit" value="Submit!" class="submit1"
-      /></span>
-    </form>
+        <span class="pss"
+          ><label for="pss">Enter the number of Passengers Travelling:</label>
+          <input type="text" id="pss" class="box"
+        /></span>
+
+
+
+        <br /><br />
+        <span class="submit"
+          ><input type="submit" value="Submit!" class="submit1"
+        /></span>
+      </form>
+    </div>
+    <hr>
+    
+<!-- Newsletter -->
+
+
+
 
     <!-- Footer -->
     <div class="footer1">
-      <br />
-      <hr />
-      <br />
-
       Headon to the
       <a style="text-decoration: none; color: orangered" href="#navbar">
         Navigation Menu</a
@@ -101,8 +234,10 @@
       to land at Home Page
     </div>
     <br />
-    <div class="footer2">&#169; Copyright 2023 SkyWings Airlines. All Rights Reserved.</div>
-    <br />
+    <div class="footer2">
+      &#169; Copyright 2023 SkyWings Airlines. All Rights Reserved.
+    </div>
+    
     <hr />
     <div class="Credit">
       Made with <span class="emoji">&#128170;</span> by Deependra Kumar
@@ -116,5 +251,10 @@
         loader.style.display = "none";
       });
     </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
